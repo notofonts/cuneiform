@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+                <html lang="en">
+                    <head>
+                        <meta charset="utf-8">
+                        <title>Fontbakery Check Report</title>
+                        <style>
+                            
+            html {
+                font-family: sans-serif;
+            }
+
+            h2 {
+                margin-top: 2em;
+            }
+
+            h3 {
+                margin-bottom: 1px;
+            }
+
+            table {
+                border-collapse: collapse;
+            }
+
+            th,
+            td {
+                border: 1px solid #ddd;
+                padding: 0.5em
+            }
+
+            tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+
+            tr {
+                text-align: left;
+            }
+
+            ul {
+                margin-top: 0;
+            }
+
+            .details_item {
+                list-style: none;
+                display: flex;
+                align-items: baseline;
+            }
+
+            .details_indicator {
+                flex: 0 0 5em;
+                font-weight: bold;
+                padding-right: 0.5em;
+                text-align: right;
+            }
+
+            .details_text {
+                flex: 1 0;
+            }
+            
+                        </style>
+                    </head>
+                    <body>
+                    <h1>Fontbakery Technical Report</h1>
+<div>If you think a check is flawed or have an idea for a check, please  file an issue at <a href='https://github.com/googlefonts/fontbakery/issues'>https://github.com/googlefonts/fontbakery/issues</a> and remember to include a pointer to the repo and branch you're checking.</div>
+<h2>Summary</h2>
+            <table>
+            <tr>
+                <th>💥 ERROR</th>
+                <th>🔥 FAIL</th>
+                <th>⚠️ WARN</th>
+                <th>⏩ SKIP</th>
+                <th>ℹ️ INFO</th>
+                <th>✔️ PASS</th>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>5</td>
+                <td>7</td>
+                <td>116</td>
+                <td>8</td>
+                <td>99</td>
+            </tr>
+            <tr>
+                <td>0%</td>
+                <td>3%</td>
+                <td>4%</td>
+                <td>65%</td>
+                <td>4%</td>
+                <td>56%</td>
+            </tr>
+            </table>
+            
+<p><strong>Note:</strong> The following loglevels were omitted in this report: SKIP, INFO, PASS, DEBUG</p>
+<h2>&lt;Section: Google Fonts&gt; 🔥🔥🔥🔥🔥⚠️⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩ℹ️ℹ️ℹ️ℹ️ℹ️ℹ️</h2>
+<h3>Check Google Fonts glyph coverage.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/glyph_coverage&gt;</div>
+
+<details><summary>🔥 <strong>fonts/NotoSansCuneiform/googlefonts/ttf/NotoSansCuneiform-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Missing required codepoints:</p>
+<pre><code>- 0x00AF (MACRON)
+</code></pre>
+<p>[code: missing-codepoints]</p>
+</span></li></ul></div></details>
+<h3>Check copyright namerecords match license file.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/name/license&gt;</div>
+
+<details><summary>🔥 <strong>fonts/NotoSansCuneiform/googlefonts/ttf/NotoSansCuneiform-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>License file OFL.txt exists but NameID 13 (LICENSE DESCRIPTION) value on platform 3 (WINDOWS) is not specified for that. Value was: &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1. This Font Software is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the SIL Open Font License for the specific language, permissions and limitations governing your use of this Font Software.&quot; Must be changed to &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL&quot; [code: wrong]</p>
+</span></li></ul></div></details>
+<h3>Copyright notices match canonical pattern in fonts</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/font_copyright&gt;</div>
+
+<details><summary>🔥 <strong>fonts/NotoSansCuneiform/googlefonts/ttf/NotoSansCuneiform-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Name Table entry: Copyright notices should match a pattern similar to: &quot;Copyright 2019 The Familyname Project Authors (git url)&quot;
+But instead we have got:
+&quot;Copyright 2017 Google Inc. All Rights Reserved.&quot; [code: bad-notice-format]</p>
+</span></li></ul></div></details>
+<h3>Version number has increased since previous release on Google Fonts?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/version_bump&gt;</div>
+
+<details><summary>🔥 <strong>fonts/NotoSansCuneiform/googlefonts/ttf/NotoSansCuneiform-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Version number 2.0 is equal to version on Google Fonts.</p>
+</span></li><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Version number 2.0 is equal to version on Google Fonts GitHub repo.</p>
+</span></li></ul></div></details>
+<h3>OS/2.fsSelection bit 7 (USE_TYPO_METRICS) is set in all fonts.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/os2/use_typo_metrics&gt;</div>
+
+<details><summary>🔥 <strong>fonts/NotoSansCuneiform/googlefonts/ttf/NotoSansCuneiform-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>OS/2.fsSelection bit 7 (USE_TYPO_METRICS) wasNOT set in the following fonts: ['fonts/NotoSansCuneiform/googlefonts/ttf/NotoSansCuneiform-Regular.ttf']. [code: missing-os2-fsselection-bit7]</p>
+</span></li></ul></div></details>
+<h3>Ensure fonts have ScriptLangTags declared on the 'meta' table.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/meta/script_lang_tags&gt;</div>
+
+<details><summary>⚠️ <strong>fonts/NotoSansCuneiform/googlefonts/ttf/NotoSansCuneiform-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>This font file does not have a 'meta' table. [code: lacks-meta-table]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: Universal&gt; ⚠️⚠️⚠️⏩⏩⏩⏩ℹ️ℹ️</h2>
+<h3>Check font contains no unreachable glyphs</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/unreachable_glyphs&gt;</div>
+
+<details><summary>⚠️ <strong>fonts/NotoSansCuneiform/googlefonts/ttf/NotoSansCuneiform-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs could not be reached by codepoint or substitution rules:</p>
+<pre><code>- uni00A0.1
+</code></pre>
+<p>[code: unreachable-glyphs]</p>
+</span></li></ul></div></details>
+<h3>Check if each glyph has the recommended amount of contours.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/contour_count&gt;</div>
+
+<details><summary>⚠️ <strong>fonts/NotoSansCuneiform/googlefonts/ttf/NotoSansCuneiform-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.</p>
+<p>The following glyphs do not have the recommended number of contours:</p>
+<pre><code>- Glyph name: aogonek	Contours detected: 3	Expected: 2
+
+- Glyph name: uogonek	Contours detected: 2	Expected: 1
+
+- Glyph name: aogonek	Contours detected: 3	Expected: 2 
+
+- And Glyph name: uogonek	Contours detected: 2	Expected: 1
+</code></pre>
+<p>[code: contour-count]</p>
+</span></li></ul></div></details>
+<h3>Ensure dotted circle glyph is present and can attach marks.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/dotted_circle&gt;</div>
+
+<details><summary>⚠️ <strong>fonts/NotoSansCuneiform/googlefonts/ttf/NotoSansCuneiform-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>No dotted circle glyph present [code: missing-dotted-circle]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: fontbakery.profiles.gdef&gt; ⚠️</h2>
+<h3>Check glyphs in mark glyph class are non-spacing.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/gdef_spacing_marks&gt;</div>
+
+<details><summary>⚠️ <strong>fonts/NotoSansCuneiform/googlefonts/ttf/NotoSansCuneiform-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following spacing glyphs may be in the GDEF mark glyph class by mistake:
+commaaccent2 (unencoded) [code: spacing-mark-glyphs]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: Outline Correctness Checks&gt; ⚠️⚠️</h2>
+<h3>Do any segments have colinear vectors?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_colinear_vectors&gt;</div>
+
+<details><summary>⚠️ <strong>fonts/NotoSansCuneiform/googlefonts/ttf/NotoSansCuneiform-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have colinear vectors:</p>
+<pre><code>* u120B6 (U+120B6): L&lt;&lt;242.0,291.0&gt;--&lt;242.0,292.0&gt;&gt; -&gt; L&lt;&lt;242.0,292.0&gt;--&lt;245.0,336.0&gt;&gt;
+
+* u12126 (U+12126): L&lt;&lt;164.0,3.0&gt;--&lt;158.0,98.0&gt;&gt; -&gt; L&lt;&lt;158.0,98.0&gt;--&lt;158.0,101.0&gt;&gt;
+
+* u1214D (U+1214D): L&lt;&lt;200.0,360.0&gt;--&lt;200.0,361.0&gt;&gt; -&gt; L&lt;&lt;200.0,361.0&gt;--&lt;202.0,391.0&gt;&gt;
+
+* u12194 (U+12194): L&lt;&lt;1005.0,936.0&gt;--&lt;1008.0,924.0&gt;&gt; -&gt; L&lt;&lt;1008.0,924.0&gt;--&lt;1011.0,915.0&gt;&gt;
+
+* u12194 (U+12194): L&lt;&lt;1179.0,107.0&gt;--&lt;1149.0,149.0&gt;&gt; -&gt; L&lt;&lt;1149.0,149.0&gt;--&lt;1116.0,194.0&gt;&gt;
+
+* u12194 (U+12194): L&lt;&lt;334.0,-118.0&gt;--&lt;331.0,-74.0&gt;&gt; -&gt; L&lt;&lt;331.0,-74.0&gt;--&lt;331.0,-66.0&gt;&gt;
+
+* u12194 (U+12194): L&lt;&lt;978.0,105.0&gt;--&lt;1005.0,63.0&gt;&gt; -&gt; L&lt;&lt;1005.0,63.0&gt;--&lt;1032.0,24.0&gt;&gt; 
+
+* And u1220B (U+1220B): L&lt;&lt;1190.0,431.0&gt;--&lt;1187.0,413.0&gt;&gt; -&gt; L&lt;&lt;1187.0,413.0&gt;--&lt;1185.0,393.0&gt;&gt; [code: found-colinear-vectors]
+</code></pre>
+</span></li></ul></div></details>
+<h3>Do outlines contain any jaggy segments?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_jaggy_segments&gt;</div>
+
+<details><summary>⚠️ <strong>fonts/NotoSansCuneiform/googlefonts/ttf/NotoSansCuneiform-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have jaggy segments:</p>
+<pre><code>* u12009 (U+12009): B&lt;&lt;1105.5,92.5&gt;-&lt;1100.0,203.0&gt;-&lt;1090.0,300.0&gt;&gt;/B&lt;&lt;1090.0,300.0&gt;-&lt;1088.0,276.0&gt;-&lt;1087.0,251.0&gt;&gt; = 10.649629523754403
+
+* u12009 (U+12009): B&lt;&lt;488.5,232.0&gt;-&lt;487.0,249.0&gt;-&lt;485.0,267.0&gt;&gt;/B&lt;&lt;485.0,267.0&gt;-&lt;474.0,131.0&gt;-&lt;468.0,6.0&gt;&gt; = 10.964343074338954
+
+* u12017 (U+12017): B&lt;&lt;1064.0,52.5&gt;-&lt;1090.0,67.0&gt;-&lt;1122.0,89.0&gt;&gt;/B&lt;&lt;1122.0,89.0&gt;-&lt;991.0,30.0&gt;-&lt;880.5,-24.5&gt;&gt; = 10.26259430646775
+
+* u12017 (U+12017): B&lt;&lt;887.5,670.5&gt;-&lt;996.0,618.0&gt;-&lt;1124.0,560.0&gt;&gt;/B&lt;&lt;1124.0,560.0&gt;-&lt;1090.0,583.0&gt;-&lt;1062.5,598.0&gt;&gt; = 9.700726663455956
+
+* u12017 (U+12017): B&lt;&lt;984.5,515.0&gt;-&lt;1015.0,511.0&gt;-&lt;1046.0,507.0&gt;&gt;/B&lt;&lt;1046.0,507.0&gt;-&lt;867.0,562.0&gt;-&lt;726.0,597.0&gt;&gt; = 9.727854211999025
+
+* u12019 (U+12019): B&lt;&lt;1196.5,454.0&gt;-&lt;1211.0,450.0&gt;-&lt;1230.0,446.0&gt;&gt;/B&lt;&lt;1230.0,446.0&gt;-&lt;1217.0,451.0&gt;-&lt;1203.5,455.0&gt;&gt; = 9.148852985793804
+
+* u12019 (U+12019): L&lt;&lt;1087.0,61.0&gt;--&lt;1123.0,89.0&gt;&gt;/L&lt;&lt;1123.0,89.0&gt;--&lt;1064.0,62.0&gt;&gt; = 13.284866484902132
+
+* u1201D (U+1201D): B&lt;&lt;1254.5,403.0&gt;-&lt;1253.0,425.0&gt;-&lt;1251.0,447.0&gt;&gt;/B&lt;&lt;1251.0,447.0&gt;-&lt;1241.0,349.0&gt;-&lt;1233.0,214.0&gt;&gt; = 11.020770937290555
+
+* u1201F (U+1201F): L&lt;&lt;617.0,413.0&gt;--&lt;627.0,413.0&gt;&gt;/B&lt;&lt;627.0,413.0&gt;-&lt;605.0,418.0&gt;-&lt;587.5,420.0&gt;&gt; = 12.80426606528674
+
+* u12021 (U+12021): B&lt;&lt;958.0,213.0&gt;-&lt;925.0,196.0&gt;-&lt;908.0,185.0&gt;&gt;/L&lt;&lt;908.0,185.0&gt;--&lt;1033.0,234.0&gt;&gt; = 11.500063492869367 
+
+* And 567 more.
+</code></pre>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-jaggy-segments]</p>
+</span></li></ul></div></details>
+                    </body>
+                </html>
